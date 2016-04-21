@@ -1,2 +1,2 @@
-require './mini_api'
+require './api.rb'
 run Sinatra::Application
