@@ -47,7 +47,7 @@ error do
 end
 
 get '/validate-auth-header' do
-	if request.env['HTTP_AUTHORIZE']
+	if request.env['HTTP_AUTHORIZATION']
 		response.body = messages.to_json
 	else
 		response.body = rejection.to_json
